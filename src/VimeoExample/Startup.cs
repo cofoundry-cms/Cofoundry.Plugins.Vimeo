@@ -9,7 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Cofoundry.Web;
 using Microsoft.Extensions.Configuration;
 
-namespace VimeoExampleModule
+namespace VimeoExample
 {
     public class Startup
     {
