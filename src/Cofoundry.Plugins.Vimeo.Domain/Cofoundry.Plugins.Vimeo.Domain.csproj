@@ -16,7 +16,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Cofoundry.Domain" Version="0.2.1-ci0021" />
+    <PackageReference Include="Cofoundry.Domain" Version="0.2.1-ci0023" />
   </ItemGroup>
 
 
