@@ -83,7 +83,7 @@ function (
             }
 
             function onFail(response) {
-                addError('There was a problem accessing Vimeo');
+                addError(response.message);
             }
 
             function onInfoLoaded(info) {

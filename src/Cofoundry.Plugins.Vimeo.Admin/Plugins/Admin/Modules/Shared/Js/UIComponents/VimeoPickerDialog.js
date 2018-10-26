@@ -41,8 +41,6 @@ function (
     /* ACTIONS */
 
     function onVideoSelected(model) {
-
-        console.log('1', model);
         if (model) {
             vm.model = {
                 id: model.video_id,
@@ -59,7 +57,6 @@ function (
         } else {
             vm.model = null;
         }
-        console.log('2',model, vm.model);
     }
 
     function onCancel() {
