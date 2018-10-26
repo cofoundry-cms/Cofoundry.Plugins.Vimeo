@@ -10,7 +10,6 @@ namespace VimeoExample
 {
     public class VimeoVideoDataModel : IPageBlockTypeDataModel, IPageBlockTypeDisplayModel
     {
-        [Required]
         [Vimeo]
         public VimeoVideo Video { get; set; }
     }
