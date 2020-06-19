@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
     
     <PackageId>Cofoundry.Plugins.Vimeo</PackageId>
     <Description>
@@ -14,7 +14,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Cofoundry.Web.Admin" Version="0.6.0" />
+    <PackageReference Include="Cofoundry.Web.Admin" Version="0.6.2-feaure-360-netc-0028" />
   </ItemGroup>
 
   <ItemGroup>
