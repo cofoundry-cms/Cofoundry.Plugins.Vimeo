@@ -15,7 +15,7 @@
                 <div ng-if="vm.model.videoUrl">{{vm.model.descripion}}</div>
             </div>
 
-            <div class="collection-actions" ng-show="vm.formScope.editMode">
+            <div class="collection-actions" ng-show="vm.formScope.editMode && !vm.readonly">
                 <cms-button-icon cms-title="{{vm.buttonText}}"
                                  cms-icon="cog"
                                  ng-click="vm.showPicker()"

@@ -18,7 +18,7 @@
   </PropertyGroup>
   
   <ItemGroup>
-    <PackageReference Include="Cofoundry.Web.Admin" Version="0.8.0" />
+    <PackageReference Include="Cofoundry.Web.Admin" Version="0.9.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -30,8 +30,8 @@
   </ItemGroup>
   
   <ItemGroup>
-    <Compile Remove="Build\node_modules\**" />
-    <EmbeddedResource Remove="Build\node_modules\**" />
-    <None Remove="Build\node_modules\**" />
+    <Compile Remove="**\node_modules\**" />
+    <EmbeddedResource Remove="**\node_modules\**" />
+    <None Remove="**\node_modules\**" />
   </ItemGroup>
 </Project>
