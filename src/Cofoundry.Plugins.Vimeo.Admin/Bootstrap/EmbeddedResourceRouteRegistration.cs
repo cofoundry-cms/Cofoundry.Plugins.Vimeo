@@ -21,7 +21,7 @@ namespace Cofoundry.Plugins.Vimeo.Admin
             if (_adminSettings.Disabled) yield break;
 
             var path = RouteConstants.PluginModuleResourcePathPrefix + "Shared/Content";
-            var rewritePath = FilePathHelper.CombineVirtualPath(_adminSettings.DirectoryName, path);
+            var rewritePath = RelativePathHelper.Combine(_adminSettings.DirectoryName, path);
 
             yield return new EmbeddedResourcePath(this.GetType().Assembly, path, rewritePath);
         }
