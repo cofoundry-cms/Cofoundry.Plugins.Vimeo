@@ -1,27 +1,25 @@
 ﻿using Cofoundry.Domain;
 using Microsoft.AspNetCore.Mvc.ModelBinding.Metadata;
-using System;
 
-namespace Cofoundry.Plugins.Vimeo.Domain
+namespace Cofoundry.Plugins.Vimeo.Domain;
+
+/// <summary>
+/// This can be used to decorate a VimeoVideo property and provide a UI Hint
+/// to the admin interface to display a Vimeo video picker.
+/// </summary>
+[AttributeUsage(AttributeTargets.Property)]
+public class VimeoAttribute : Attribute, IMetadataAttribute
 {
     /// <summary>
-    /// This can be used to decorate a VimeoVideo property and provide a UI Hint
-    /// to the admin interface to display a Vimeo video picker.
+    /// Initializes a new instance of the <see cref="VimeoAttribute"/> class.
     /// </summary>
-    [AttributeUsage(AttributeTargets.Property)]
-    public class VimeoAttribute : Attribute, IMetadataAttribute
+    public VimeoAttribute()
+        : base()
     {
-        /// <summary>
-        /// Initializes a new instance of the <see cref="VimeoAttribute"/> class.
-        /// </summary>
-        public VimeoAttribute()
-            : base()
-        {
-        }
+    }
 
-        public void Process(DisplayMetadataProviderContext context)
-        {
-            context.DisplayMetadata.TemplateHint = "Vimeo";
-        }
+    public void Process(DisplayMetadataProviderContext context)
+    {
+        context.DisplayMetadata.TemplateHint = "Vimeo";
     }
 }

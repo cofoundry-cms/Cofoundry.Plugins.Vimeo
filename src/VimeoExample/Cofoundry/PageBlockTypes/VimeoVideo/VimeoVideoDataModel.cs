@@ -1,16 +1,10 @@
 ﻿using Cofoundry.Domain;
 using Cofoundry.Plugins.Vimeo.Domain;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
 
-namespace VimeoExample
+namespace VimeoExample;
+
+public class VimeoVideoDataModel : IPageBlockTypeDataModel, IPageBlockTypeDisplayModel
 {
-    public class VimeoVideoDataModel : IPageBlockTypeDataModel, IPageBlockTypeDisplayModel
-    {
-        [Vimeo]
-        public VimeoVideo Video { get; set; }
-    }
+    [Vimeo]
+    public VimeoVideo Video { get; set; }
 }

@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cofoundry.Plugins.Vimeo", "Cofoundry.Plugins.Vimeo\Cofoundry.Plugins.Vimeo.csproj", "{090BBCF7-F571-41D4-A727-BD688E5D9F60}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cofoundry.Plugins.Vimeo", "src\Cofoundry.Plugins.Vimeo\Cofoundry.Plugins.Vimeo.csproj", "{090BBCF7-F571-41D4-A727-BD688E5D9F60}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cofoundry.Plugins.Vimeo.Domain", "Cofoundry.Plugins.Vimeo.Domain\Cofoundry.Plugins.Vimeo.Domain.csproj", "{A19516AE-D057-4BE3-9A76-E5D762ED31CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cofoundry.Plugins.Vimeo.Domain", "src\Cofoundry.Plugins.Vimeo.Domain\Cofoundry.Plugins.Vimeo.Domain.csproj", "{A19516AE-D057-4BE3-9A76-E5D762ED31CF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cofoundry.Plugins.Vimeo.Admin", "Cofoundry.Plugins.Vimeo.Admin\Cofoundry.Plugins.Vimeo.Admin.csproj", "{7464C46B-1173-437C-84ED-32683363370C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cofoundry.Plugins.Vimeo.Admin", "src\Cofoundry.Plugins.Vimeo.Admin\Cofoundry.Plugins.Vimeo.Admin.csproj", "{7464C46B-1173-437C-84ED-32683363370C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{0C085762-538F-461F-9009-BC060458D648}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VimeoExample", "VimeoExample\VimeoExample.csproj", "{C1097E18-9678-45A9-986C-8448A3F9DFFC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VimeoExample", "src\VimeoExample\VimeoExample.csproj", "{C1097E18-9678-45A9-986C-8448A3F9DFFC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

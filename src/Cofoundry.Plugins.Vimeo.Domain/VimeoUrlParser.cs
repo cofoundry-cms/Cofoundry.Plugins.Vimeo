@@ -1,27 +1,25 @@
-﻿using System;
-using System.Text.RegularExpressions;
+﻿using System.Text.RegularExpressions;
 
-namespace Cofoundry.Plugins.Vimeo.Domain
+namespace Cofoundry.Plugins.Vimeo.Domain;
+
+/// <summary>
+/// Parser for working with vimeo urls and ids
+/// </summary>
+public static class VimeoUrlParser
 {
     /// <summary>
-    /// Parser for working with vimeo urls and ids
+    /// Extracts the ID of a video from a Vimeo URL.
     /// </summary>
-    public static class VimeoUrlParser
+    /// <param name="vimeoVideoUrl">The vimeo video URL.</param>
+    /// <returns>The id of the Vimeo video, or empty string if the id couldn't be extracted</returns>
+    public static string GetId(this string vimeoVideoUrl)
     {
-        /// <summary>
-        /// Extracts the ID of a video from a Vimeo URL.
-        /// </summary>
-        /// <param name="vimeoVideoUrl">The vimeo video URL.</param>
-        /// <returns>The id of the Vimeo video, or empty string if the id couldn't be extracted</returns>
-        public static string GetId(this string vimeoVideoUrl)
-        {
-            var regex = new Regex(@"^.*(vimeo\.com\/)((channels\/[A-z]+\/)|(groups\/[A-z]+\/videos\/))?([0-9]+)", RegexOptions.IgnoreCase | RegexOptions.Multiline);
+        var regex = new Regex(@"^.*(vimeo\.com\/)((channels\/[A-z]+\/)|(groups\/[A-z]+\/videos\/))?([0-9]+)", RegexOptions.IgnoreCase | RegexOptions.Multiline);
 
-            var match = regex.Match(vimeoVideoUrl);
+        var match = regex.Match(vimeoVideoUrl);
 
-            if (!match.Success) return "";
+        if (!match.Success) return "";
 
-            return match.Groups[5].Value;
-        }
+        return match.Groups[5].Value;
     }
 }
