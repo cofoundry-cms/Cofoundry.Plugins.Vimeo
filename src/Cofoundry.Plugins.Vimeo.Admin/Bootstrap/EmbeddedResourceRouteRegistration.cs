@@ -1,4 +1,4 @@
-﻿using Cofoundry.Core;
+using Cofoundry.Core;
 using Cofoundry.Core.ResourceFiles;
 using Cofoundry.Domain;
 using Cofoundry.Web.Admin;
@@ -16,11 +16,14 @@ public class EmbeddedResourceRouteRegistration : IEmbeddedResourceRouteRegistrat
 
     public IEnumerable<EmbeddedResourcePath> GetEmbeddedResourcePaths()
     {
-        if (_adminSettings.Disabled) yield break;
+        if (_adminSettings.Disabled)
+        {
+            yield break;
+        }
 
         var path = RouteConstants.PluginModuleResourcePathPrefix + "Shared/Content";
         var rewritePath = RelativePathHelper.Combine(_adminSettings.DirectoryName, path);
 
-        yield return new EmbeddedResourcePath(this.GetType().Assembly, path, rewritePath);
+        yield return new EmbeddedResourcePath(GetType().Assembly, path, rewritePath);
     }
 }

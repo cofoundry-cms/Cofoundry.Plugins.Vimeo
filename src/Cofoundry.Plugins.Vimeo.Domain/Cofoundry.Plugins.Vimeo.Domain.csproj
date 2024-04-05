@@ -1,8 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+	<TargetFramework>net8.0</TargetFramework>
 	<ImplicitUsings>enable</ImplicitUsings>
+	<Nullable>enable</Nullable>
 
     <PackageId>Cofoundry.Plugins.Vimeo.Domain</PackageId>
     <Description>Cofoundry plugin that adds domain models for the Vimeo video service.</Description>
@@ -12,12 +13,12 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>bin\Release\net6.0\Cofoundry.Plugins.Vimeo.Domain.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\net8.0\Cofoundry.Plugins.Vimeo.Domain.xml</DocumentationFile>
     <NoWarn>1701;1702;1705;1591</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Cofoundry.Domain" Version="0.11.1" />
+    <PackageReference Include="Cofoundry.Domain" Version="0.12.0" />
   </ItemGroup>
 
 

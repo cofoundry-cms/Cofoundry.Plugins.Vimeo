@@ -7,7 +7,7 @@
 <h1>@Model.PageTitle</h1>
 
 @(await Cofoundry.Template.Region("Body")
-            .AllowMultipleBlocks()
-            .AllowBlockType<VimeoVideoDataModel>()
-            .EmptyContentMinHeight(500)
-            .InvokeAsync())
+    .AllowMultipleBlocks()
+    .AllowBlockType<VimeoVideoDataModel>()
+    .EmptyContentMinHeight(500)
+    .InvokeAsync())

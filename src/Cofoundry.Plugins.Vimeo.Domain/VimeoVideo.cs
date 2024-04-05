@@ -1,4 +1,4 @@
-﻿namespace Cofoundry.Plugins.Vimeo.Domain;
+namespace Cofoundry.Plugins.Vimeo.Domain;
 
 /// <summary>
 /// Represents a video hosted on the Vimeo video website.
@@ -6,19 +6,19 @@
 public class VimeoVideo
 {
     /// <summary>
-    /// The unique Vimero id of the video.
+    /// The unique Vimeo id of the video.
     /// </summary>
     public long? Id { get; set; }
 
     /// <summary>
     /// Title of the video.
     /// </summary>
-    public string Title { get; set; }
+    public string? Title { get; set; }
 
     /// <summary>
     /// Description of the video (html removed).
     /// </summary>
-    public string Description { get; set; }
+    public string? Description { get; set; }
 
     /// <summary>
     /// The duration of the video in seconds.
@@ -43,7 +43,7 @@ public class VimeoVideo
     /// <summary>
     /// The full url to the default thumbnail image representing the video.
     /// </summary>
-    public string ThumbnailUrl { get; set; }
+    public string? ThumbnailUrl { get; set; }
 
     /// <summary>
     /// The width of the thumnbail image.
